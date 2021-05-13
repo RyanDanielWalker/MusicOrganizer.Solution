@@ -6,7 +6,7 @@ namespace MusicOrganizer.Controllers
 {
   public class AlbumsController : Controller
   {
-    [HttpGet("/albums/{albumId}/artists/new")]
+    [HttpGet("/artists/{artistId}/albums/new")]
     public ActionResult New(int artistId)
     {
       Artist artist = Artist.Find(artistId);

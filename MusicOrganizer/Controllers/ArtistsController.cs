@@ -5,10 +5,10 @@ using MusicOrganizer.Models;
 
 namespace MusicOrganizer.Controllers
 {
-  public class ArtitsController : Controller
+  public class ArtistsController : Controller
   {
     [HttpGet("/artists")]
-    public ActionResult Idex()
+    public ActionResult Index()
     {
       List<Artist> allArtists = Artist.GetAll();
       return View(allArtists);
